@@ -10,8 +10,8 @@ const mainVariant = {
     y: 0,
   },
   animate: {
-    x: 20,
-    y: -20,
+    x: 10,
+    y: -10,
     opacity: 0.9,
   },
 };
@@ -69,13 +69,13 @@ export const FileUpload = ({
           <GridPattern />
         </div>
         <div className='flex flex-col items-center justify-center'>
-          <p className='relative z-20 font-sans font-bold text-neutral-700 dark:text-neutral-300 text-base'>
+          <p className='relative z-20 font-bold text-neutral-700 dark:text-neutral-300 text-base'>
             Upload file
           </p>
-          <p className='relative z-20 font-sans font-normal text-neutral-400 dark:text-neutral-400 text-base mt-2'>
+          <p className='relative z-20 font-normal text-neutral-400 dark:text-neutral-400 text-base mt-2'>
             Drag or drop your files here or click to upload
           </p>
-          <div className='relative w-full mt-10 max-w-xl mx-auto'>
+          <div className='relative w-full mt-10 max-w-xl mx-auto' >
             {files.length > 0 &&
               files.map((file, idx) => (
                 <motion.div
@@ -136,14 +136,14 @@ export const FileUpload = ({
                   damping: 20,
                 }}
                 className={cn(
-                  "relative z-40 bg-white dark:bg-neutral-900 flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md"
+                  "relative z-40 bg-white dark:bg-neutral-900 flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md "
                 )}
               >
                 {isDragActive ? (
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className='text-neutral-600 flex flex-col items-center'
+                    className='text-neutral-600 flex flex-col items-center border border-black'
                   >
                     Drop it
                     <IconUpload className='h-4 w-4 text-neutral-600 dark:text-neutral-400' />
