@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { UploadPage } from "@/components/UploadPage";
 
 export default function Home() {

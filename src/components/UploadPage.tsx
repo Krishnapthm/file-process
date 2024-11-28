@@ -1,12 +1,11 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { FileUpload } from "./ui/file-upload";
 
 export function UploadPage() {
   const [files, setFiles] = useState<File[]>([]);
+  console.log(files);
   const handleFileUpload = (files: File[]) => {
     setFiles(files);
     console.log(files);
